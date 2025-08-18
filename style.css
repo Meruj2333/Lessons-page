@@ -13,7 +13,7 @@ body{
 }
 .container{
     max-width: 1338px;
-    margin: 100px  auto;
+    margin: 50px  auto;
     padding: 20px 10px;
 }
 .row {
@@ -21,7 +21,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px 0;
-    align-items: flex-start;
 }
 
 .speak-img{
@@ -36,6 +35,7 @@ body{
 .card, .card-large{
     padding: 20px;
     background-color: #dfdfdf;
+    border: none;
 
 
 }
@@ -43,12 +43,12 @@ body{
     font-size: 24px ;
 }
 .title-large{
-    margin: 30px 0;
+    margin:20px 0;
     font-size: 24px;
 }
 
 .submit{
-    border-radius:  20px;
+    border-radius:  5px;
     padding: 15px 0;
     width: 65%;
     background-color: #000000;
@@ -57,14 +57,14 @@ body{
 .p-one{
     font-size: 18px;
     margin: 20px 0;
-    line-height: 2;
+    /*line-height: 2;*/
 
 }
 .h2-top{
     margin-top: 10px;
 }
 .listening-text{
-    width: 46%;
+    width: 60%;
 }
 .img2{
     display: block;
@@ -96,7 +96,7 @@ body{
 .menu-tool{
     display: flex;
 justify-content: space-around;
-    width: 40%;
+    width: 50%;
     margin: auto;
 
 }
@@ -122,6 +122,12 @@ font-size: 36px;
 }
 .first-textbox{
     width: 47%;
+    .main-text{
+        margin: 50px auto;
+    }
+}
+.first-textbox1{
+    width: 60%;
     .main-text{
         margin: 50px auto;
     }
@@ -155,9 +161,12 @@ font-size: 36px;
         font-size: 20px;
     }
 }
+.text-start{
+    text-align: start;
+}
 .num-img{
     width: 40%;
-    align-self: end;
+    align-self: center;
     img{
         width: 100%;
     }
@@ -195,6 +204,7 @@ font-size: 36px;
 }
 .contact-img{
     width: 35%;
+    align-self: center;
 
     img{
         width: 100%;
@@ -222,6 +232,15 @@ font-size: 36px;
         padding: 30px 0;
     }
 }
+.list{
+    display: none;
+}
+.plan-card{
+    justify-content: space-between;
+}
+.fa{
+    font-size: 28px;
+}
 
 
 
@@ -234,10 +253,10 @@ font-size: 36px;
 
 
 
-
-
-@media only screen and (min-width: 750px) {
-
+@media only screen and (min-width: 575px) {
+    .list{
+        display: none;
+    }
     .sub4 {
         width: 30%;
     }
@@ -245,7 +264,7 @@ font-size: 36px;
     .parent {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        /*grid-template-rows: repeat(3, 1fr);*/
         gap: 8px;
     }
 
@@ -275,7 +294,6 @@ font-size: 36px;
 
     .card, .card-large {
         /*height: 380px;*/
-        border: 1px solid;
         display: flex;
         flex-direction: column;
     }
@@ -294,7 +312,6 @@ font-size: 36px;
 
     .card-large {
         /*height: 608px;*/
-        border: 1px solid;
         background-color: #dfdfdf;
 
 
@@ -309,11 +326,153 @@ font-size: 36px;
     }
 
 }
-@media only screen and (max-width: 1000px){
-    /*.container-lg{*/
-    /*max-width: 750px;}*/
+@media only screen and (max-width: 992px){
+    .list{
+        display: none;
+    }
+   .container{
+       margin: 0 auto;
+       max-width: 930px;
+
+   }
+    .title{
+        font-size: 48px;
+    }
+    .main-text{
+        font-size: 16px;
+    }
+    .title-large{
+        font-size: 20px;
+    }
+    .p-one{
+        font-size: 14px;
+    }
+    .skills{
+        font-size: 36px;
+    }
+    .price-box{
+        width: 100%;
+    }
+    .price{
+        font-size: 22px;
+    }
+    .num-box{
+        .num{
+            font-size: 30px;
+        }
+        .num-text{
+            font-size: 16px;
+        }
+
+    }
+    .price-box{
+        span{
+            font-size: 14px;
+        }
+    }
+    .input-contact{
+    .submit{
+        font-size: 18px;
+        padding: 25px 0;
+    }
+    }
+    .submit{
+        font-size: 18px;
+    }
+    .submit-talk{
+        font-size: 18px;
+        padding: 14px 34px;
+    }
+    .brit{
+        font-size: 30px;
+    }
+
 }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 767px) {
+    .list{
+        display: none;
+    }
+    .container{
+        margin: 0 auto;
+        max-width: 690px;
+
+    }
+    .talk{
+        display: none;
+    }
+    .list{
+        display: block;
+        /*width: 10%;*/
+        background-color: white;
+        border: none;
+    }
+    .menu-tool{
+        display: none;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .main-text{
+        font-size: 14px;
+    }
+
+    .title-large{
+        font-size: 22px;
+    }
+    .p-one{
+        font-size: 13px;
+    }
+    .skills{
+        font-size: 30px;
+    }
+    .price{
+        font-size: 22px;
+    }
+    .num-img{
+        width: 40%;
+
+    }
+    .num-box{
+        .num{
+            font-size: 24px;
+        }
+        .num-text{
+            font-size: 13px;
+        }
+
+    }
+
+    .price-box{
+        /*width: 70%;*/
+        margin: 0 auto;
+        span{
+            font-size: 14px;
+        }
+    }
+
+    .input-contact{
+        .submit{
+            font-size: 18px;
+            padding: 16px 0;
+        }
+        input{
+            padding: 21px 15px;
+
+        }
+    }
+    .submit{
+        font-size: 16px;
+    }
+    .submit-talk{
+        font-size: 18px;
+        padding: 14px 34px;
+    }
+    .brit{
+        font-size: 30px;
+    }
+
+}
+@media only screen and (max-width: 575px){
     /*.container-lg{*/
     /*    max-width: 50px;*/
     /*}*/
@@ -322,6 +481,28 @@ font-size: 36px;
     /*    grid-template-columns: repeat(2, 1fr);*/
     /*    gap: 8px;*/
     /*}*/
+    .card, .card-large {
+        padding:  5px;
+    }
+    .container{
+        max-width: 510px;
+    }
+    .first-textbox{
+        width: 100%;
+        text-align: center;
+    }
+    .lump-box{
+        margin: auto;
+    }
+    .last-img{
+        margin:  0 auto;
+        width: 80%;
+    }
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
+    .lump-div{
+    display: none}
     .speak-img{
         width: 90%;
         img{
@@ -359,28 +540,126 @@ font-size: 36px;
     }
     .sub4{
         order: 3;
-        margin-top:94px ;
+        margin-top:71px ;
 
     }
+
     .parent {
         display: grid;
         grid-template-columns: repeat(2, 4fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
 
         gap: 8px;
     }
     .card, .card-large{
         /*height: 300px;*/
-        border: 1px solid;
         display: flex;
         flex-direction: column;
     }
     /*.listening-text{*/
     /*    width: 100%;*/
     /*}*/
+    .first-textbox1{
+        width: 100%;
+        text-align: center;
+        .skills{
+            text-align: center;
+        }
+    }
+    .talk{
+        display: none;
+    }
+    .list{
+        display: block;
+        /*width: 10%;*/
+        background-color: white;
+        border: none;
+    }
+    .menu-tool{
+        display: none;
+    }
+    .title{
+        font-size: 34px;
+    }
+    .main-text{
+        font-size: 16px;
+    }
+    .title-large{
+        font-size: 18px;
+    }
+    .p-one{
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    .skills{
+        font-size: 30px;
+    }
+    .price{
+        font-size: 22px;
+    }
+    .plan-card{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        /*img{*/
+        /*    margin: 0 auto;*/
+        /*}*/
+
+    }
+    .num-box{
+        .num{
+            font-size: 22px;
+        }
+        .num-text{
+            font-size: 13px;
+        }
+
+    }
+    .price-box{
+        width: 70%;
+        span{
+            font-size: 14px;
+        }
+    }
+    .contact-img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contact-text{
+        width: 100%;
+        text-align: center;
+        h2{
+            text-align: center;
+        }
+    }
+    .input-contact{
+        .submit{
+            font-size: 18px;
+            padding: 16px 0;
+        }
+        input{
+            padding: 21px 15px;
+
+        }
+    }
+
+    .submit{
+        /*width:  100%;*/
+        font-size: 16px;
+    }
+    .get-started-btn{
+        width: 70%;
+    }
+    .submit-talk{
+        font-size: 18px;
+        padding: 14px 34px;
+    }
+    .brit{
+        font-size: 30px;
+    }
 }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 320px){
     .parent {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -391,6 +670,39 @@ font-size: 36px;
     }
     .card, .card-large{
         /*height: 300px;*/
-        border: 1px solid;
+    }
+    .lump-box{
+        width: 100%;
+    }
+    .first-textbox{
+        .submit{
+            width: 100%;
+            padding: 15px 0;
+        }
+    }
+    .num-img{
+        width: 100%;
+    }
+    .skills{
+        margin: 10px auto;
+    }
+    .speak-img, .img2, .img2-listen{
+        width: 70%;
+        margin: 0 ;
+    }
+    .title{
+        font-size: 24px;
+    }
+.input-contact{
+    input{
+        width: 100%;
+    }
+}
+    .contact-sub{
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    .fd{
+        flex-direction: column;
     }
 }
