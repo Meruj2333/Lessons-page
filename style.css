@@ -61,7 +61,7 @@ body{
 
 }
 .h2-top{
-    margin-top: 10px;
+    margin-top: 0;
 }
 .listening-text{
     width: 60%;
@@ -253,7 +253,7 @@ font-size: 36px;
 
 
 
-@media only screen and (min-width: 575px) {
+@media only screen and (min-width: 577px) {
     .list{
         display: none;
     }
@@ -472,7 +472,7 @@ font-size: 36px;
     }
 
 }
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 576px){
     /*.container-lg{*/
     /*    max-width: 50px;*/
     /*}*/
@@ -481,6 +481,13 @@ font-size: 36px;
     /*    grid-template-columns: repeat(2, 1fr);*/
     /*    gap: 8px;*/
     /*}*/
+    .div4{
+        .row{
+            height: 100%;
+            flex-direction: column;
+
+        }
+    }
     .card, .card-large {
         padding:  5px;
     }
@@ -540,7 +547,7 @@ font-size: 36px;
     }
     .sub4{
         order: 3;
-        margin-top:71px ;
+        /*margin-top:71px ;*/
 
     }
 
